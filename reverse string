@@ -1,0 +1,31 @@
+s = input()
+target = input()
+words = s.split()
+result = []
+for w in words :
+   if w == target:
+       result.append(w[::-1])
+   else:
+       result.append(w)
+print(" ".join(result)
+
+
+      or
+
+s=input()
+string=input()
+result = " "
+  i = 0
+  n=len(s)
+k=len(string)
+while i<n:
+  if s[i:i+k]==string:
+    j = i+k-1
+    while j>=i:
+      result = result +s[j]
+      j -= 1
+    i = i + k
+  else:
+    result = result + s[i]
+    i += 1
+print(result)
